@@ -3,12 +3,14 @@ language: node_js
 services:
 - docker
 node_js:
-- '6.9.0'
+- 6.9.0
 notifications:
   email:
   - howardc93@gmail.com
   - aqc2109@columbia.edu
-before_install:
+  slack:
+    secure: F3F4BFYVEV23Mtj4UXQ0Xcjjp+pvo1kxcvk3sQj84za095e7CK0+91Q/Boef34OW6HRz/IZhBoEODt6Yq4+lLOtYB99DqkNpf7dxLoO6C02TDD9GcwDN6iuiJ037Krk9JrtQm9x/nkqHXwJVlBtM1Z9S6H07rnpnS4ULKgfNuCjvA+5L/36bNY5Olbo6oj0j5sea6mB/f/bzVvub2whzp0wU+uHGgjQQXWrneAcS3JNsLKRZYjjPMEfxXR1wdvYjiEHlsO+6sA9IPFLzcdwikNxDGDXL7MeB4xs/iloBZY5+Az0XElWaNUZ/CDjteA4wAWPvO9VzTyA8/czspunjbWU9Kk+2kSlT9/br5938PhMr5r3FEALTtE/j5TLc0VX9DbpWolUPVCLirHPpqqvdHtnTpzUxpQn1VS2AnnUQ2zM141wphOg+tULRzoM3pmTa6ey1YrGH8cLu5UR4KyxNkh+5imPIG0inTsSgwqJxuTEgjN9lgdGlMjBLijM66c8esnuSgsemuJ4ldyagReebbthl+X7+OeSqpMBAFe3rbM1kn1sfldwcw88Kd1xqzCCxwxObwzK0qbvgKn001mEDZhx0w/DD/lf2rM+kAqtM1Fj5rQXDosz0Z9b+dIaOYty6/FSFaNd8/y4l1VdlYQh0BPHhV+r/3u0yFBxL+gRagGM=
+before_install: 
 install: true
 script:
 - sudo bash scripts/build.sh
